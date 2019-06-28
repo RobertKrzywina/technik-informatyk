@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Formatowanie</title>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="top">
+			<h1>Formatowanie dokumentów HTML</h1>
+		</div>
+		<div class="firstContent">
+			<h2>Przykład listy - hobby</h2>
+			<ul>
+				<li>muzyka</li>
+				<li>turystyka</li>
+				<ol>
+					<li>góry</li>
+					<li>jeziora</li>
+					<li>na rowerze</li>
+				</ol>
+				<li>książki</li>
+			</ul>
+		</div>
+		<div class="secondContent">
+			<h2>Przykład tabeli - rozkład dnia</h2>
+			<table border="2">
+				<thead>
+					<tr>
+						<th>Pora dnia</th>
+						<th>obowiązki</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>rano</td>
+						<td>nauka</td>
+					</tr>
+					<tr>
+						<td>południe</td>
+						<td>zajęcia dodatkowe</td>
+					</tr>
+					<tr>
+						<td>popołudnie</td>
+						<td rowspan="2">moje hobby</td>
+					</tr>
+					<tr>
+						<td>wieczór</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="thirdContent">
+			<img src="img/image.jpg" alt="technologia web">
+		</div>
+		<div class="mainContent">
+			<p>Podaj rozmiar tekstu w procentach: <input type="number" id="btnFont" onchange="changeFontSize()"> %</p>
+
+			<p>
+				<select id="select" onchange="changeFontType()">
+					<option value="default">prosty</option>
+					<option value="italic">kursywa</option>
+				</select>
+			</p>
+
+			<p>Jakim kolorem sformatować tekst? Wybierz przycisk</p>
+			<input type="submit" id="btn1" value="" onclick="changeColor(1)">
+			<input type="submit" id="btn2" value="" onclick="changeColor(2)">
+			<input type="submit" id="btn3" value="" onclick="changeColor(3)">
+
+			<p id="textToChange">To jest przykład paragrafu, który może być dowolnie formatowany przez Java Script</p>
+			
+		</div>
+		<div class="footer">
+			<p>Formatowaniem tekstu zajmował się: <i>NUMER_PESEL</i></p>
+			<a href="http://formatowanie.pl" target="_blank">Odwiedź także</a>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
