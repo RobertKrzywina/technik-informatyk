@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	background-color: rgb(255, 218, 65);
+}
+
+.container {
+	margin: auto;
+}
+
+.banner {
+	background-image: url('img/photo.jpg');
+	color: blue;
+	height: 200px;
+}
+
+.left {
+	background-color: rgb(255, 218, 65);
+	text-align: center;
+	width: 40%;
+	height: 400px;
+	float: left;
+}
+
+.main {
+	background-color: rgb(255, 226, 100);
+	text-align: center;
+	width: 30%;
+	height: 400px;
+	float: left;
+}
+
+.right {
+	background-color: rgb(255, 233, 143);
+	text-align: center;
+	width: 30%;
+	height: 400px;
+	float: left;
+}
+
+.footer {
+	background-color: rgb(255, 218, 65);
+	color: blue;
+	clear: both;
+	text-align: center;
+}
+
+a {
+	color: green;
+}
+
+p {
+	font-size: 130%;
+}
