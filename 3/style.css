@@ -1,0 +1,56 @@
+body {
+	font-family: Helvetica;
+	margin: 0;
+}
+
+.leftPanel {
+	background-color: navy;
+	color: white;
+	height: 700px;
+	width: 25%;
+	float: left;
+}
+
+.topPanel {
+	background-color: royalblue;
+	height: 100px;
+	width: 75%;
+	text-align: center;
+	float: left;
+}
+
+.centerPanel {
+	background-color: steelblue;
+	height: 300px;
+	width: 75%;
+	float: left;
+}
+
+.centerBottomPanel {
+	background-color: royalblue;
+	height: 300px;
+	width: 75%;
+	text-align: center;
+	float: left;
+}
+
+.bottomPanel {
+	background-color: steelblue;
+	text-align: center;
+	padding: 20px;
+	clear: both;
+	height: 180px;
+}
+
+h1 {
+	letter-spacing: 5px;
+}
+
+form {
+	margin: 30px;
+	line-height: 50px;
+}
+
+label {
+	display: block;
+}

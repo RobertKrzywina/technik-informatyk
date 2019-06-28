@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Filmy</title>
+</head>
+<body>
+	
+	<div class="container">
+
+		<div class="leftPanel">
+			<h3>Dostępne gatunki filmu</h3>
+
+			<ol>
+				<li>Sci-Fi</li>
+				<li>animacja</li>
+				<li>dramat</li>
+				<li>horror</li>
+				<li>komedia</li>
+			</ol>
+
+			<p><a href="img/photo.png">Pobierz teraz</a></p>
+			<p><a href="http://repertuar-kin.pl" target="_blank">Sprawdź repertuar kin</a></p>
+
+			<br>
+
+			<form action="wczytaj.php" method="get">
+				<input type="submit" value="Pokaż filmy z bazy danych">
+			</form>
+
+		</div>
+		<div class="topPanel">
+			<h1>FILMOTEKA</h1>
+		</div>
+		<div class="centerPanel">
+
+			<form action="dodaj.php" method="post" onmouseout="onMouseOutFun()" onmouseover="onMouseOverFun()" id="myForm">
+
+				<label>Tytuł: <input type="text" name="tytul" id="tytul"></label>
+				<label>Gatunek filmu: <input type="number" name="gatunek" id="gatunek"></label>
+				<label>Rok produkcji: <input type="number" name="rok" id="rok"></label>
+				<label>Ocena: <input type="number" name="ocena" id="ocena"></label>
+
+				<input onclick="clearForm()" type="button" value="CZYŚĆ">
+				<input type="submit" value="DODAJ">
+
+			</form>
+
+		</div>
+		<div class="centerBottomPanel">
+			<img src="img/photo.png" alt="zdjęcia filmowe">
+		</div>
+		<div class="bottomPanel">
+			<p>Autor strony: NUMER_PESEL</p>
+		</div>
+
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
